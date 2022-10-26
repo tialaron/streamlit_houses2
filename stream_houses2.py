@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 pictures_path = '/app/streamlit_houses2/pictures/'
-model01 = load_model('/app/streamlit_houses2/model_hous_all.h5')
+model01 = load_model('/app/streamlit_houses2/housemodel1.h5')
 
 st.header('Искусственный Интеллект для прогнозирования стоимости недвижимости .')
 
