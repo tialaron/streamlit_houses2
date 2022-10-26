@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 
 pictures_path = '/app/streamlit_houses2/pictures/'
+model01 = load_model('/app/streamlit_houses2/model_hous_all.h5')
 
 st.header('Искусственный Интеллект для прогнозирования стоимости недвижимости .')
 
@@ -12,7 +13,7 @@ with st.sidebar:
     st.markdown("## [2. Этапы разработки кейса](#pipeline)", unsafe_allow_html=True)
     st.markdown("## [3. Задача](#task)", unsafe_allow_html=True)
     st.markdown("## [4. Линейная регрессия](#regression)", unsafe_allow_html=True)
-    st.markdown("## [5. База данных ](#bagofwords)", unsafe_allow_html=True)
+    st.markdown("## [5. База данных ](#bazadannih)", unsafe_allow_html=True)
     st.markdown("## [6. Демонстрация работы](#neuronwork)", unsafe_allow_html=True)
     st.markdown("## [7. Тест](#voprosi)", unsafe_allow_html=True)
 
@@ -56,6 +57,15 @@ st.write('Линейная регрессия - используемая в ст
 st.image(pictures_path+'linregr1.png')
 st.write('Данную модель довольно часто используют в эконометрике, поэтому она очень хорошо изучена. В качестве примеров можно привести модель прогнозирования затрат организации и [модель потребительских расходов](https://studme.org/51197/ekonomika/model_natsionalnyy_dohod_sovokupnye_rashody_keynsianskiy_krest) . '
          'Различают также полиномиальную и криволинейную регрессии, но в данной работе будет рассматриваться именно линейная.')
+
+#_________________________База данных___________________________________
+st.subheader('База данных',anchor='bazadannih')
+st.write('Все строки преобразовываются в векторы размером 108 нулей или единичек и последним элементом будет являться нормализованное число, характеризующее цену квартиры.')
+
+#_________________________Демонстрация работы___________________________________
+st.subheader('Демонстрация работы',anchor='neuronwork')
+st.write('С помощью выпадающих окон меню можно подобрать характеристики квартиры для которой необходимо выполнить прогноз цены.')
+
 
 
 
