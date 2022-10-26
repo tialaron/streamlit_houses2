@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+pictures_path = '/app/streamlit_houses2/pictures/'
 
 st.header('Искусственный Интеллект для прогнозирования стоимости недвижимости .')
 
@@ -22,7 +23,7 @@ st.write('2.Студентам, изучающим принципы матема
 st.write('3.Студентам других специальностей, интересующимся возможностями применением искусственного интеллекта в области ценообразования.')
 
 st.subheader('Этапы разработки кейса', anchor='pipeline')
-st.image(pictures_path+'pipelinehouses22.jpg',caption='Этапы проектирования кейса')
+st.image(pictures_path+'pipelinehousecost2.png',caption='Этапы проектирования кейса')
 with st.expander("Общая схема"):
     st.markdown(
         '''
