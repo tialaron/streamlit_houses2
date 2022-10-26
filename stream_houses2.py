@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+from tensorflow.keras.models import load_model
 
 pictures_path = '/app/streamlit_houses2/pictures/'
 model01 = load_model('/app/streamlit_houses2/housemodel1.h5')
