@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.header('Искусственный Интеллект для определения авторства текста.')
+st.header('Искусственный Интеллект для прогнозирования стоимости недвижимости .')
 
 with st.sidebar:
     st.markdown(''' # Содержание:''')
