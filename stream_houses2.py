@@ -441,7 +441,7 @@ col11, col12, col13, col14 = st.columns(4)
 
 with col11:
     with st.container():
-        st.subheader("Расположение")
+        st.write("Расположение")
         option1 = st.selectbox('Какое метро?',["Площадь Революции м.", "Арбатская м.", "Смоленская м.", "Красные ворота м.","Чистые пруды м.", "Лубянка м."])
         minutes1 = st.text_input('Сколько минут до метро?')
         tran_pesh = st.selectbox('пешком или на транспорте?', ["пешком", "на транспорте"])
@@ -453,7 +453,7 @@ with col11:
 
 with col12:
     with st.container():
-        st.subheader("информация о доме")
+        st.write("информация о доме")
         etazhei = st.text_input('Сколько всего этажей в доме?')
         house_type = st.selectbox('Какой тип дома? (монолитнокирпичный/кирпичный/панельный и т.д.)',['монолитнокирпичный', 'кирпичный', 'панельный'])
         if house_type == "монолитнокирпичный":
@@ -465,7 +465,7 @@ with col12:
 
 with col13:
     with st.container():
-        st.subheader("информация о квартире")
+        st.write("информация о квартире")
         option = st.selectbox('Сколько комнат в квартире?', ["1", "2", "3", "4", "5"])
         etazh = st.text_input('На каком этаже квартира?')
         option4 = st.selectbox('Какой тип балкона?',
@@ -542,7 +542,7 @@ with col13:
 
 with col14:
     with st.container():
-        st.subheader("результат")
+        st.write("результат")
 
         option3 = etazh + "/" + etazhei + " " + house_type
 
